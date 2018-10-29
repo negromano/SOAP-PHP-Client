@@ -7,6 +7,26 @@
  */
 
 require_once('./lib/nusoap.php');
+class Futbolista{
+
+	public $id, $forename, $surname, $position, $club, $number, $height;
+	public function __construct( $id, $forename, $surname, $position, $club, $number, $height ){
+		$this->id = $id;
+		$this->forename = $forename;
+		$this->surname = $surname;
+		$this->position = $position;
+		$this->club = $club;
+		$this->height = $height;
+		$this->number = $number;
+	}
+
+	public function darId(){
+		return $this->id;
+	}
+}
+
+$futbolista = new Futbolista(':v','','','','','','');
+echo($futbolista->id);
 $wsdl = "http://desktop-3fvpk7n:7101/ServerFootball-ServerFootball-context-root/ServicesPort?WSDL";
 $client = new nusoap_client($wsdl, 'wsdl');
 $err = $client->getError();
