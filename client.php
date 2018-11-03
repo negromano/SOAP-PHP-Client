@@ -26,23 +26,23 @@ class Client{
 	}
 
 	public function create($player){
-		$this->client->call('create', $player);
+		$this->client->call('create', array( "arg0"=>$player));
 	}
 
 	public function read($id){
-		return $this-> client->call('read', $id);
+		return $this-> client->call('read', array( "arg0"=>$id));
 	}
 
 	public function update($player){
-		$this->client->call('update', $player);
+		$this->client->call('update', array( "arg0"=>$player));
 	}
 
 	public function listM(){
 		return $this->client->call('list');
 	}
 
-	public function delete($player){
-		$this->client->call('delete', $player);
+	public function delete($id){
+		$this->client->call('delete', array( "arg0"=>$id));
 	}
 }
 

@@ -8,15 +8,13 @@
     <meta name="viewport" content="width=device-width">
 
   </head>
-<nav class="blue darken-2">
+<nav class="blue darken-3">
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">FOOTBALL</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="list.php">List</a></li>
         <li><a href="create.php">Create</a></li>
         <li><a href="read.php">Read</a></li>
-        <li><a href="update.php">Update</a></li>
-        <li><a href="delete.php">Delete</a></li>
       </ul>
     </div>
   </nav>
