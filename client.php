@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  *
@@ -14,7 +14,7 @@ class Client{
 	public $client = ':v';
 
 	public function __construct(){
-		$wsdl = "http://kecc-g3-pc:7101/ServerFootball-ServerFootball-context-root/ServicesPort?WSDL";
+		$wsdl = "http://192.168.15.3:7101/ServerFootball-ServerFootball-context-root/ServicesPort?WSDL";
 		$var_client = new nusoap_client($wsdl, 'wsdl');
 		$this->client = $var_client;
 		//Error Handling
